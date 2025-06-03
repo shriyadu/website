@@ -68,12 +68,10 @@
       color: var(--text);
     }
 
-    /* HEADER with solid background */
     header {
       position: relative;
       height: 300px;
-      background:  
-                  url('profile_cover.jpg') center/cover no-repeat;
+      background: url('profile_cover.jpg') center/cover no-repeat;
       background-attachment: scroll;
       display: flex;
       justify-content: center;
@@ -150,7 +148,6 @@
       gap: 1.5rem;
     }
 
-    /* Enhanced Skills Section */
     .skills-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -209,7 +206,6 @@
       transform: scale(1.05);
     }
 
-    /* Specific category icons */
     .languages h4::before { content: "💻"; }
     .mobile h4::before { content: "📱"; }
     .databases h4::before { content: "🗃️"; }
@@ -282,10 +278,6 @@
       <h3 class="section-title">Projects</h3>
       <div class="projects">
         <div class="card">
-          <h4>Advanced DSA Solver</h4>
-          <p>250+ problems solved with optimized approaches. Top 15% ranking across platforms.</p>
-        </div>
-        <div class="card">
           <h4>Decision Support System</h4>
           <p>Built a dashboard using ML models with 95% accuracy, improving decision time by 70%.</p>
         </div>
@@ -303,16 +295,24 @@
     <section id="skills">
       <h3 class="section-title">Skills</h3>
       <div class="skills-container">
-        
         <div class="skill-category languages">
           <h4>Languages</h4>
           <div class="skill-tags">
             <span class="skill-tag">Java</span>
             <span class="skill-tag">Python</span>
-            <span class="skill-tag">JavaScript</span>
             <span class="skill-tag">Dart</span>
             <span class="skill-tag">C</span>
             <span class="skill-tag">Kotlin</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4>Frontend</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
           </div>
         </div>
 
@@ -321,7 +321,6 @@
           <div class="skill-tags">
             <span class="skill-tag">Android SDK</span>
             <span class="skill-tag">Flutter</span>
-            <span class="skill-tag">RESTful APIs</span>
           </div>
         </div>
 
@@ -330,6 +329,16 @@
           <div class="skill-tags">
             <span class="skill-tag">MySQL</span>
             <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4>Frameworks</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Spring Boot</span>
+            <span class="skill-tag">Hibernate (ORM)</span>
+            <span class="skill-tag">JAX-RS (REST API)</span>
           </div>
         </div>
 
@@ -351,12 +360,22 @@
           </div>
         </div>
 
+        <div class="skill-category">
+          <h4>Core CS</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Advanced DSA</span>
+            <span class="skill-tag">Dynamic Programming</span>
+            <span class="skill-tag">Graphs</span>
+            <span class="skill-tag">Big-O Analysis</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">Problem Solving</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="experience">
       <h3 class="section-title">Experience</h3>
-
       <div class="experience-item">
         <h4>FarmwiseAI – Software Developer <span>Aug 2023 – Present</span></h4>
         <ul>
@@ -378,7 +397,6 @@
     <section id="contact" class="contact">
       <h3 class="section-title">Contact</h3>
       <p><strong>Email:</strong> <a href="mailto:shriumat@gmail.com">shriumat@gmail.com</a></p>
-     
       <p>
         <strong>Links:</strong>
         <a href="https://www.linkedin.com/in/shriya-d-u-857a2b213" target="_blank">LinkedIn</a> •
